@@ -1,0 +1,2 @@
+# dsname	index
+RD0002/RedshiftOutput0002	0

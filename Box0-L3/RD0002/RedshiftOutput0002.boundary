@@ -1,0 +1,4 @@
+BoundaryRank         = 3
+BoundaryDimension    = 134 134 134 
+NumberOfBaryonFields = 0
+ParticleBoundaryType = 3
