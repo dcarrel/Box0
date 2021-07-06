@@ -59,7 +59,7 @@ CosmologySimulationGridLevel[3]          = 3
 RefineRegionLeftEdge                     =          0.44375        0.4359375          0.44375
 RefineRegionRightEdge                     =          0.55625        0.5484375          0.55625
 
-dtDataDump             = 10.0
+dtDataDump             = 5
 CosmologyOutputRedshift[0] = 30.0
 CosmologyOutputRedshift[1] = 20.0
 CosmologyOutputRedshift[2] = 10.0
