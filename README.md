@@ -1,5 +1,5 @@
 # Box0-L0
-![](https://github.com/dcarrel1/Box/blob/main/Box0-L0/reduced.png)
+![](https://github.com/dcarrel1/Box0/blob/main/Box0-L0/reduced.png)
 |Halo ID|Virial Mass (Msun)|Virial Temperature (K)| x (Mpc/h) | y (Mpc/h)| z (Mpc/h)|
 |---|--------|-----|--------|--------|--------|
 |8|6.668e07|11630|0.568900|0.894683|0.275559|
@@ -16,21 +16,21 @@
 Zooming on on 605:
 
 # Box0-L1
-![](https://github.com/dcarrel1/Box/blob/main/Box0-L1/reduced.png)
+![](https://github.com/dcarrel1/Box0/blob/main/Box0-L1/reduced.png)
 |Halo ID|Virial Mass (Msun)|Virial Temperature (K)| x (Mpc/h) | y (Mpc/h)| z (Mpc/h)|
 |---|--------|-----|--------|--------|--------|
 |71|9.399e07|14618|0.481833|0.484715|0.505253|
 
 
 # Box0-L2
-![](https://github.com/dcarrel1/Box/blob/main/Box0-L2/reduced.png)
+![](https://github.com/dcarrel1/Box0/blob/main/Box0-L2/reduced.png)
 |Halo ID|Virial Mass (Msun)|Virial Temperature (K)| x (Mpc/h) | y (Mpc/h)| z (Mpc/h)|
 |---|--------|-----|--------|--------|--------|
 |200|9.404e07|14623|0.481449|0.476923|0.506188|
 
 # Box0-L3
-![](https://github.com/dcarrel1/Box/blob/main/Box0-L3/reduced.png)
+![](https://github.com/dcarrel1/Box0/blob/main/Box0-L3/reduced.png)
 |Halo ID|Virial Mass (Msun)|Virial Temperature (K)| x (Mpc/h) | y (Mpc/h)| z (Mpc/h)|
 |---|--------|-----|--------|--------|--------|
-|200|9.404e07|14623|0.481449|0.476923|0.506188|
+|426|9.580e07|14805|0.481539|0.476784|0.506189|
 
