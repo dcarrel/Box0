@@ -9,8 +9,12 @@ RightFaceBoundaryCondition               = 3 3 3
 RefineBy                                 = 2
 
 #
-CosmologySimulationOmegaBaryonNow        = 0
-CosmologySimulationOmegaCDMNow           = 0.315
+CosmologySimulationOmegaBaryonNow        = 0.0493
+CosmologySimulationOmegaCDMNow           = 0.2657
+CosmologySimulationDensityName           = GridDensity
+CosmologySimulationVelocity1Name         = GridVelocities_x
+CosmologySimulationVelocity2Name         = GridVelocities_y
+CosmologySimulationVelocity3Name         = GridVelocities_z
 CosmologySimulationCalculatePositions    = 1
 CosmologySimulationParticleVelocity1Name = ParticleVelocities_x
 CosmologySimulationParticleVelocity2Name = ParticleVelocities_y
