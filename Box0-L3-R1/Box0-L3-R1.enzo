@@ -9,8 +9,12 @@ RightFaceBoundaryCondition               = 3 3 3
 RefineBy                                 = 2
 
 #
-CosmologySimulationOmegaBaryonNow        = 0
-CosmologySimulationOmegaCDMNow           = 0.315
+CosmologySimulationOmegaBaryonNow        = 0.0493
+CosmologySimulationOmegaCDMNow           = 0.2657
+CosmologySimulationDensityName           = GridDensity
+CosmologySimulationVelocity1Name         = GridVelocities_x
+CosmologySimulationVelocity2Name         = GridVelocities_y
+CosmologySimulationVelocity3Name         = GridVelocities_z
 CosmologySimulationCalculatePositions    = 1
 CosmologySimulationParticleVelocity1Name = ParticleVelocities_x
 CosmologySimulationParticleVelocity2Name = ParticleVelocities_y
@@ -64,13 +68,33 @@ CosmologyOutputRedshift[4] = 6.5
 
 #  set grid refinement parameters #
 StaticHierarchy           = 0
-MaximumRefinementLevel    = 4
-MaximumGravityRefinementLevel = 4
-CellFlaggingMethod        = 4  // dm
+MaximumRefinementLevel    = 18
+MaximumParticleRefinementLevel = 13
+RefineByJeansLengthSafetyFactor = 16
+CellFlaggingMethod        = 2 4 6 12// refine baryon, dark matter particle mass, jeans and region
 MinimumEfficiency         = 0.35
-MinimumOverDensityForRefinement = 4.0
-MinimumMassForRefinementLevelExponent = -0.1
-
+MinimumOverDensityForRefinement = 0.0078125 0.0078125 0.0
+MinimumMassForRefinementLevelExponent = 0.0 0.0 0.0
 ParticleCourantSafetyNumber = 0.8
 GreensFunctionMaxNumber   = 100
+#
+Gamma                  = 1.6667
+PPMDiffusionParameter  = 0       // diffusion off
+DualEnergyFormalism    = 1       // use total & internal energy
+InterpolationMethod    = 1     // SecondOrderA
+CourantSafetyNumber    = 0.5
+ParticleCourantSafetyNumber = 0.8
+FluxCorrection         = 1
+ConservativeInterpolation = 0
+HydroMethod            = 0
+#
+StarParticleCreation   = 0
+StarParticleFeedback   = 0
 
+#### Enzo params added for cooling/LW test
+MultiSpecies = 2
+RadiativeCooling = 1
+RadiationFieldType = 16
+RadiationShield= 2
+RadiationSpectrumNormalization = 3E4
+RateDataCaseBRecombination = 1
