@@ -1,7 +1,0 @@
-BoundaryRank         = 3
-BoundaryDimension    = 134 134 134 
-NumberOfBaryonFields = 5
-ParticleBoundaryType = 3
-BoundaryFieldType    = 0 4 5 6 1 
-BaryonFileName       = ./RD0002/RedshiftOutput0002.boundary.hdf
-BoundaryValuePresent = 0 0 0 0 0 0 
