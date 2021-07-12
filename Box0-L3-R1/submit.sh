@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH -J Box0-L3
-#SBATCH -o Box0-L3.out
-#SBATCH -e Box0-L3.err
+#SBATCH -J Box0-L3-R1
+#SBATCH -o Box0-L3-R1.out
+#SBATCH -e Box0-L3-R1.err
 #SBATCH -N 4
 #SBATCH -n 32
 #SBATCH -p development
@@ -13,4 +13,4 @@ module load hdf5
 module load mvapich2
 
 cd $SLURM_SUBMIT_DIR
-ibrun ../enzo.exe -d Box0-L3.enzo
+ibrun ../enzo.exe -d Box0-L3-R1.enzo
