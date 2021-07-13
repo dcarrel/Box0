@@ -73,8 +73,8 @@ MaximumParticleRefinementLevel = 13
 RefineByJeansLengthSafetyFactor = 16
 CellFlaggingMethod        = 2 4 6 12// refine baryon, dark matter particle mass, jeans and region
 MinimumEfficiency         = 0.35
-MinimumOverDensityForRefinement = 0.0078125 0.0078125 0.0
-MinimumMassForRefinementLevelExponent = 0.0 0.0 0.0
+MinimumOverDensityForRefinement = 0.0078125 0.0078125 0.0 0.0
+MinimumMassForRefinementLevelExponent = 0.0 0.0 0.0 0.0
 ParticleCourantSafetyNumber = 0.8
 GreensFunctionMaxNumber   = 100
 #
@@ -96,5 +96,5 @@ MultiSpecies = 2
 RadiativeCooling = 1
 RadiationFieldType = 16
 RadiationShield= 2
-RadiationSpectrumNormalization = 3E4
+RadiationSpectrumNormalization = 0
 RateDataCaseBRecombination = 1
