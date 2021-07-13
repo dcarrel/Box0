@@ -1,0 +1,100 @@
+# Relevant Section of Enzo Paramter File (NOT COMPLETE!) 
+ProblemType                              = 30      // cosmology simulation
+TopGridRank                              = 3
+TopGridDimensions                        = 128 128 128
+SelfGravity                              = 1       // gravity on
+TopGridGravityBoundary                   = 0       // Periodic BC for gravity
+LeftFaceBoundaryCondition                = 3 3 3   // same for fluid
+RightFaceBoundaryCondition               = 3 3 3
+RefineBy                                 = 2
+
+#
+CosmologySimulationOmegaBaryonNow        = 0.0493
+CosmologySimulationOmegaCDMNow           = 0.2657
+CosmologySimulationDensityName           = GridDensity
+CosmologySimulationVelocity1Name         = GridVelocities_x
+CosmologySimulationVelocity2Name         = GridVelocities_y
+CosmologySimulationVelocity3Name         = GridVelocities_z
+CosmologySimulationCalculatePositions    = 1
+CosmologySimulationParticleVelocity1Name = ParticleVelocities_x
+CosmologySimulationParticleVelocity2Name = ParticleVelocities_y
+CosmologySimulationParticleVelocity3Name = ParticleVelocities_z
+CosmologySimulationParticleDisplacement1Name = ParticleDisplacements_x
+CosmologySimulationParticleDisplacement2Name = ParticleDisplacements_y
+CosmologySimulationParticleDisplacement3Name = ParticleDisplacements_z
+
+#
+#  define cosmology parameters
+#
+ComovingCoordinates                      = 1       // Expansion ON
+CosmologyOmegaMatterNow                  = 0.315
+CosmologyOmegaLambdaNow                  = 0.685
+CosmologyHubbleConstantNow               = 0.674     // in 100 km/s/Mpc
+CosmologyComovingBoxSize                 = 1    // in Mpc/h
+CosmologyMaxExpansionRate                = 0.015   // maximum allowed delta(a)/a
+CosmologyInitialRedshift                 = 99      //
+CosmologyFinalRedshift                   = 10       //
+GravitationalConstant                    = 1       // this must be true for cosmology
+#
+#
+ParallelRootGridIO                       = 1
+ParallelParticleIO                       = 1
+PartitionNestedGrids                     = 1
+CosmologySimulationNumberOfInitialGrids  = 4
+CosmologySimulationGridDimension[1]      =               52               52               52
+CosmologySimulationGridLeftEdge[1]       =          0.40625        0.3984375          0.40625
+CosmologySimulationGridRightEdge[1]      =         0.609375        0.6015625         0.609375
+CosmologySimulationGridLevel[1]          = 1
+CosmologySimulationGridDimension[2]      =               84               84               84
+CosmologySimulationGridLeftEdge[2]       =         0.421875        0.4140625         0.421875
+CosmologySimulationGridRightEdge[2]      =        0.5859375         0.578125        0.5859375
+CosmologySimulationGridLevel[2]          = 2
+CosmologySimulationGridDimension[3]      =              144              144              144
+CosmologySimulationGridLeftEdge[3]       =        0.4296875         0.421875        0.4296875
+CosmologySimulationGridRightEdge[3]      =        0.5703125           0.5625        0.5703125
+CosmologySimulationGridLevel[3]          = 3
+#
+# region allowed for further refinement
+#
+RefineRegionLeftEdge                     =          0.44375        0.4359375          0.44375
+RefineRegionRightEdge                     =          0.55625        0.5484375          0.55625
+
+dtDataDump             = 1.0
+CosmologyOutputRedshift[0] = 30.0
+CosmologyOutputRedshift[1] = 20.0
+CosmologyOutputRedshift[2] = 10.0
+CosmologyOutputRedshift[3] = 9.5
+CosmologyOutputRedshift[4] = 6.5
+
+#  set grid refinement parameters #
+StaticHierarchy           = 0
+MaximumRefinementLevel    = 18
+MaximumParticleRefinementLevel = 13
+RefineByJeansLengthSafetyFactor = 16
+CellFlaggingMethod        = 2 4 6 12// refine baryon, dark matter particle mass, jeans and region
+MinimumEfficiency         = 0.35
+MinimumOverDensityForRefinement = 0.0078125 0.0078125 0.0
+MinimumMassForRefinementLevelExponent = 0.0 0.0 0.0
+ParticleCourantSafetyNumber = 0.8
+GreensFunctionMaxNumber   = 100
+#
+Gamma                  = 1.6667
+PPMDiffusionParameter  = 0       // diffusion off
+DualEnergyFormalism    = 1       // use total & internal energy
+InterpolationMethod    = 1     // SecondOrderA
+CourantSafetyNumber    = 0.5
+ParticleCourantSafetyNumber = 0.8
+FluxCorrection         = 1
+ConservativeInterpolation = 0
+HydroMethod            = 0
+#
+StarParticleCreation   = 0
+StarParticleFeedback   = 0
+
+#### Enzo params added for cooling/LW test
+MultiSpecies = 2
+RadiativeCooling = 1
+RadiationFieldType = 16
+RadiationShield= 2
+RadiationSpectrumNormalization = 3E4
+RateDataCaseBRecombination = 1
