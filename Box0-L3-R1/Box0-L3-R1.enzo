@@ -78,23 +78,23 @@ MinimumMassForRefinementLevelExponent = 0.0 0.0 0.0
 ParticleCourantSafetyNumber = 0.8
 GreensFunctionMaxNumber   = 100
 #
-Gamma                  = 1.6667
+Gamma                  = 1.6667  //adiabatic index
 PPMDiffusionParameter  = 0       // diffusion off
 DualEnergyFormalism    = 1       // use total & internal energy
 InterpolationMethod    = 1     // SecondOrderA
 CourantSafetyNumber    = 0.5
 ParticleCourantSafetyNumber = 0.8
-FluxCorrection         = 1
+FluxCorrection         = 1 //preserves mass/energy conservation between subgrids
 ConservativeInterpolation = 0
-HydroMethod            = 0
+HydroMethod            = 0 //uses PPM DE (piecewise parabolic) to solve hydro equations
 #
 StarParticleCreation   = 0
 StarParticleFeedback   = 0
 
 #### Enzo params added for cooling/LW test
-MultiSpecies = 2
-RadiativeCooling = 1
-RadiationFieldType = 16
-RadiationShield= 2
-RadiationSpectrumNormalization = 3E4
-RateDataCaseBRecombination = 1
+MultiSpecies = 2 //Includes helium
+RadiativeCooling = 1 //Radiative cooling is on
+RadiationFieldType = 16 //Blackbody shape
+RadiationShield= 2 //H2 self-shielding
+RadiationSpectrumNormalization = 3E4 //Jcrit in customary units
+RateDataCaseBRecombination = 1 
