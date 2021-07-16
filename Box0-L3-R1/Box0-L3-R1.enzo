@@ -67,7 +67,6 @@ CosmologyOutputRedshift[3] = 9.5
 CosmologyOutputRedshift[4] = 6.5
 
 StopFirstTimeAtLevel = 18
-OutputFirstTimeAtLevel = 8
 
 #  set grid refinement parameters #
 StaticHierarchy           = 0
