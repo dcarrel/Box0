@@ -2,9 +2,9 @@
 #SBATCH -J Box0-L3-R0
 #SBATCH -o Box0-L3-R0.out
 #SBATCH -e Box0-L3-R0.err
-#SBATCH -N 4
-#SBATCH -n 128
-#SBATCH -p development
+#SBATCH -N 3
+#SBATCH -n 144
+#SBATCH -p skx-dev
 #SBATCH -t 2:00:00
 #SBATCH --mail-user=carrel@ucsb.edu
 #SBATCH --mail-type=all
