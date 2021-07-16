@@ -80,17 +80,21 @@ MinimumOverDensityForRefinement = 0.0078125 0.0078125 0.0
 MinimumMassForRefinementLevelExponent = 0.0 0.0 0.0
 ParticleCourantSafetyNumber = 0.8
 GreensFunctionMaxNumber   = 100
-#
-Gamma                  = 1.6667  //adiabatic index
-PPMDiffusionParameter  = 0       // diffusion off
-DualEnergyFormalism    = 1       // use total & internal energy
-InterpolationMethod    = 1     // SecondOrderA
-CourantSafetyNumber    = 0.5
-ParticleCourantSafetyNumber = 0.8
-FluxCorrection         = 1 //preserves mass/energy conservation between subgrids
-ConservativeInterpolation = 0
-HydroMethod            = 0 //uses PPM DE (piecewise parabolic) to solve hydro equations
-#
+
+######################################
+
+Gamma                  = 1.6667  //Adiabatic index
+PPMDiffusionParameter  = 0       //Diffusion off
+DualEnergyFormalism    = 1       //Use total & internal energy
+InterpolationMethod    = 1      // SecondOrderA
+CourantSafetyNumber    = 0.5    //Timesteps are 0.5 of the maximum step guaranteeing a convergent solution
+ParticleCourantSafetyNumber = 0.8 //Maximum fraction of grid particle can move in a timestep.
+FluxCorrection         = 1 //Preserves mass/energy conservation between subgrids
+ConservativeInterpolation = 0 //Interpolate via non-conserved quantities (e.g. velocity) instead of conserved quantities (e.g. momentum)
+HydroMethod            = 0 //Uses PPM DE (piecewise parabolic) to solve hydro equations
+
+#######################################
+
 StarParticleCreation   = 0
 StarParticleFeedback   = 0
 
